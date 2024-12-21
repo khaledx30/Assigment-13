@@ -1,8 +1,8 @@
 export class Ui {
   displayGameData(data) {
-    let gamesBox = ``;
+    let gamesCard = ``;
     for (let i = 0; i < data.length; i++) {
-      gamesBox += `
+      gamesCard += `
          <div class="col">
          <div data-id="${
            data[i].id
@@ -40,7 +40,7 @@ export class Ui {
          `;
     }
 
-    document.getElementById("gameData").innerHTML = gamesBox;
+    document.getElementById("gameData").innerHTML = gamesCard;
   }
 
   displayDetails(data) {
